@@ -343,8 +343,8 @@ struct ContentView: View {
     //@AppStorage("state") private var state = "start"
     @State private var state = "start"
     //@AppStorage("ivs") private var inventories: [String] = []
-    @AppStorage private var inventories: [String] = ["76561199286613334", "76561199719391922"]
-    @AppStorage private var names: [String] = ["Torta", "Slimak"]
+    @AppStorage("invs") private var inventories: [String] = ["76561199286613334", "76561199719391922"]
+    @AppStorage("names") private var names: [String] = ["Torta", "Slimak"]
     var invValue: String {
         String(format: "%.2f", inventory.totalPrice)
     }
